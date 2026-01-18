@@ -1,13 +1,162 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flyes El</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flyes El – Professionel el-installation</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b1220;
+      color: #111;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(
+          rgba(0,0,0,0.7),
+          rgba(0,0,0,0.4)
+        ),
+        url("images/hero.jpg");
+      background-size: cover;
+      background-position: center;
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      padding: 60px;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      max-width: 700px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin-top: 10px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin-top: 20px;
+      margin-right: 10px;
+      padding: 14px 22px;
+      background: orange;
+      color: black;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 40px;
+      background: #f5f5f5;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
-<h1>Flyes El – Prototype</h1>
-<p>Klar til GitHub Pages.</p>
-<img src="images/hero.jpg" style="width:100%">
+
+<header>
+  <strong>Flyes El</strong>
+  <nav>
+    <a href="#">Forside</a>
+    <a href="#">Ydelser</a>
+    <a href="#">Om os</a>
+    <a href="#">Kontakt</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Professionel el-installation – udført sikkert og korrekt</h1>
+    <p>Vi hjælper private og erhverv med el-arbejde, ladestandere og service.</p>
+
+    <div class="buttons">
+      <a href="#">Få et tilbud</a>
+      <a href="#">Kontakt os</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Vores ydelser</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="images/el-installation.jpg">
+      <h3>El-installation</h3>
+      <p>Professionel installation og fejlfinding.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/ladestander.jpg">
+      <h3>Ladestander</h3>
+      <p>Montering af ladestandere til elbiler.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/el-eftersyn.jpg">
+      <h3>El-eftersyn</h3>
+      <p>Gennemgang af installationer.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/service.jpg">
+      <h3>Service</h3>
+      <p>Hurtig hjælp og reparation.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Flyes El · Autoriseret el-installatør</p>
+  <p>Telefon: 12 34 56 78 · info@flyes-el.dk</p>
+</footer>
+
 </body>
 </html>
